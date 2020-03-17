@@ -1,0 +1,41 @@
+var custies = [10, 2, 2, 3];
+
+
+function queueTime(customers, queues) {
+  var counter = 0;
+  var obj = {};
+  
+  if(queues > customers.length) {
+    return Math.max.apply(null, customers);
+  }
+  
+  if(customers.length === 0) {
+    return 0;
+  }
+ 
+ for(let i = 1 ; i <= queues; i++) {
+   obj[i] = customers.shift();
+ }
+ 
+ while (customers.length > 0) {
+   for(var key in obj) {
+     obj[key]--;
+     if(obj[key] === 0 && customers.length > 0) {
+       obj[key] = customers.shift();
+     } 
+   }
+   counter++;
+ }
+ 
+ var times = [];
+  for(key in obj) {
+    times.push(obj[key]);
+  }
+  
+ var leftover = Math.max.apply(null, times);
+ counter += leftover;
+ 
+ return counter;
+}
+
+console.log(queueTime(custies, 2));
