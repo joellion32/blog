@@ -54,7 +54,7 @@
                     <h5 class="card-title ">
                         <a href="/post/detalle/{{$post->slug}}">{{$post->titulo}}</a>
                     </h5>
-                    <p class="card-text mb-3">{{$post->cabeza}}</p>
+                    <p class="card-text mb-3 texto">{{$post->cabeza}}</p>
                 </div>
             </div>
             @endforeach
@@ -85,13 +85,13 @@
 						<div class="tech-btm">
 							<h4>Secciones</h4>
 							<div class="list-group">
-								@foreach ($secciones as $seccion)
-								<a href="/categorias/{{$seccion->slug}}" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">
-									{{$seccion->nombre_categoria}}
-									<span class="badge badge-success badge-pill">{{$seccion->posts->count()}}</span>
-								</a>
-								@endforeach
-							  </div>
+								<a href="/categorias/Panorama Cristiano" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Panorama Cristiano</a>
+								<a href="/categorias/La Buena Nueva" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">La Buena Nueva</a>
+								<a href="/categorias/Instrumentos de Bendición" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Instrumentos de Bendición</a>
+								<a href="/categorias/Vida Cristiana" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Vida Cristiana</a>
+								<a href="/categorias/Barriendo el alma" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Barriendo el alma</a>
+								<a href="/categorias/Editorial" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Editorial</a>
+							</div>
 						</div>
 
 					<div class="single-gd tech-btm text-left">

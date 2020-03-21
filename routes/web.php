@@ -60,5 +60,7 @@ Route::get('editar/carrousel', 'admin\AdminController@editarcarrousel')->name('p
 
 
 //rutas JSON
-Route::get('/carrousel/{id}', 'Blog\PostController@carrousel');
+Route::get('/carrousel/{id}', 'Blog\CarrouselController@carrousel');
+Route::get('/carrousel', 'Blog\CarrouselController@obtenercarrousel');
+Route::post('save/carrousel', 'Blog\CarrouselController@savecarrousel');
 

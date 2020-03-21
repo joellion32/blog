@@ -20,13 +20,13 @@ class CommentsController extends Controller
     {
     
         $comentario = new Comment();
-        $id = $request->input('post_id');
+        $slug = $request->input('slug');
         $comentario->post_id = $request->input('post_id');
         $comentario->nombre_usuario = $request->input('nombre');
         $comentario->email = $request->input('email');
         $comentario->comentario = $request->input('comentario');
         $comentario->save();
-        return redirect()->route('detalle', ['id' => $id]);
+        return redirect()->route('detalle', ['slug' => $slug]);
     }
 
     /**

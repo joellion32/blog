@@ -63,7 +63,7 @@
 						  <h5 class="card-title mt-2">
 							  <a href="/post/detalle/{{$post->slug}}">{{$post->titulo}}</a>
 						  </h5>
-						  <p class="card-text mb-3">{{$post->cabeza}}</p>
+						  <p class="card-text mb-3 texto">{{$post->cabeza}}</p>
 
 						  <ul class="blog-icons my-1">
 							<li>

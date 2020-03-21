@@ -21,6 +21,12 @@ body a {
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
+.texto {
+	width: 230px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
 
 a:hover {
 	text-decoration: none;
@@ -49,6 +55,11 @@ h6 {
 	font-family: 'Poppins', sans-serif;
 	letter-spacing:1px;
 }
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+  }
+
 
 p {
 	margin: 0;

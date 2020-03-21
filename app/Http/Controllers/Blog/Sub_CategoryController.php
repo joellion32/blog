@@ -14,7 +14,7 @@ class Sub_CategoryController extends Controller
     public function mostrarsubcategoria($slug)
     {
          // mostrar las categorias 
-         $categorias = Category::orderBy('id', 'ASC')->paginate(4);
+         $categorias = Category::orderBy('id', 'ASC')->paginate(5);
          $_SERVER['categorias'] = $categorias;
          
          // mostrar las sub_categorias 
@@ -22,7 +22,7 @@ class Sub_CategoryController extends Controller
          $_SERVER['subcategorias'] = $subcategorias;
          
          // mostrar las secciones 
-        $secciones = Category::orderBy('id', 'ASC')->get();
+        $secciones = Category::orderBy('id', 'DESC')->get();
 
         $id = Sub_Category::where('slug', $slug)->pluck('id')->first();
         $posts = Post::orderBy('id', 'DESC')->where('sub_categoria_id', '=', $id)->paginate(8);

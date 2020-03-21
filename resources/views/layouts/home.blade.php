@@ -40,10 +40,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  color: white;
 		}
 
-		/* On screens that are 992px wide or less, the background color is blue */
+	/* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 1900px) {
   .contenido {
-	margin-left: 18rem;
+	margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .contenido {
+	margin-left: 10rem;
   }
 }
 
@@ -94,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 logo text-center">
 					</div>
 					<div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0 text-light">
-						<img width="40px" height="40px" style="margin-top:-12px;" src="{{asset('images/logo1.jpg')}}" alt=""> <a class="navbar-brand" href="/">La Buena Nueva</a>
+						<img width="40px" height="40px" style="margin-top:-12px;" src="{{asset('images/correo.png')}}" alt=""> <a class="navbar-brand" href="/">La Buena Nueva</a>
 					</div>
 				</div>
 			</div>
@@ -153,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--footer-->
 	<footer>
 		
-        <!-- footer -->
+     <!-- footer -->
         <div class="footer-cpy text-center">
             <div class="logo">
                 <a class="navbar-brand" href="index.html">
@@ -223,22 +229,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 		
 		// carrousel
-		var data = JSON.parse(localStorage.getItem('lista'));
-		console.log(data.titulo);
-			if (data.imagen) {
+		$.ajax({
+			type: "GET",
+			url: "http://127.0.0.1:8000/carrousel",
+			dataType: "JSON",
+			success: function (response) {
+				var data = response.data;
+				if (data[0].imagen) {
                 $("#slide").append(`<div class="carousel-item item2">
                 <div class="carousel-caption">
-                    <h3>${data.titulo}
+                    <h3>${data[0].titulo}
                     </h3>
                 </div>
             </div>
     
             <style>
             .carousel-item.item2 {
-               background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data.imagen}) no-repeat;
-               background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data.imagen}) no-repeat;
-               background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data.imagen}) no-repeat;
-               background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data.imagen}) no-repeat;
+               background: -webkit-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data[0].imagen}) no-repeat;
+               background: -moz-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data[0].imagen}) no-repeat;
+               background: -ms-linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data[0].imagen}) no-repeat;
+               background: linear-gradient(rgba(23, 22, 23, 0.2), rgba(23, 22, 23, 0.5)), url(/uploads/${data[0].imagen}) no-repeat;
                background-size: cover;
            }
             </style>
@@ -246,7 +256,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             } else {
                 $("#slide").append(`<div class="carousel-item item2">
                 <div class="carousel-caption">
-                    <h3>${data.titulo}
+                    <h3>${data[0].titulo}
                     </h3>
                 </div>
             </div>
@@ -262,7 +272,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </style>
             `);
             }
-
+			}
+		});
 });
 </script>
 <!--// end-smoth-scrolling -->

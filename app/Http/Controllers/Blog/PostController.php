@@ -44,14 +44,6 @@ class PostController extends Controller
         
     }
 
-
-    public function carrousel($id){
-          // para enviar al carrousel
-          $carrousel = Post::find($id);
-          return response()->json($carrousel);
-    }
-
-
     /**
      * Show the form for creating a new resource.
      *
