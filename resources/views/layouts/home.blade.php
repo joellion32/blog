@@ -121,6 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				@foreach ($_SERVER['categorias'] as $categoria)
 				<a href="/categorias/{{$categoria->slug}}">{{$categoria->nombre_categoria}}</a>
 				@endforeach
+				<a href="/editorial">Editorial</a>
 				</div>
 			  </div>
 			

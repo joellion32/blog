@@ -21,7 +21,7 @@ class PostController extends Controller
     public function index(Request $request)
     {
         // mostrar las categorias 
-        $categorias = Category::orderBy('id', 'ASC')->paginate(5);
+        $categorias = Category::orderBy('id', 'ASC')->paginate(4);
         $_SERVER['categorias'] = $categorias;
 
         // mostrar las sub_categorias 
@@ -125,7 +125,7 @@ class PostController extends Controller
         $post = Post::find($id);
         
           // mostrar las categorias 
-            $categorias = Category::orderBy('id', 'ASC')->paginate(5);
+            $categorias = Category::orderBy('id', 'ASC')->paginate(4);
           $_SERVER['categorias'] = $categorias;
 
           // mostrar las sub_categorias 

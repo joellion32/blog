@@ -21,7 +21,7 @@
 					<div class="blog-grid-top">
 
 						<div class="blog_info_left_grid">
-							<a href="single.html">
+							<a href="#">
 								<img src="images/b1.jpg" class="img-fluid" alt="">
 							</a>
 						</div>

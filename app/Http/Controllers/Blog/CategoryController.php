@@ -19,7 +19,7 @@ class CategoryController extends Controller
     public function mostrarcategoria($slug)
     {
          // mostrar las categorias 
-         $categorias = Category::orderBy('id', 'ASC')->paginate(5);
+         $categorias = Category::orderBy('id', 'ASC')->paginate(4);
          $_SERVER['categorias'] = $categorias;
          
          // mostrar las sub_categorias 

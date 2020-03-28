@@ -91,7 +91,7 @@
 								<a href="/categorias/Instrumentos de Bendición" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Instrumentos de Bendición</a>
 								<a href="/categorias/Vida Cristiana" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Vida Cristiana</a>
 								<a href="/categorias/Barriendo el alma" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Barriendo el alma</a>
-								<a href="/categorias/Editorial" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Editorial</a>
+								<a href="/editorial" class="list-group-item list-group-item d-flex justify-content-between align-items-center text-dark">Editorial</a>
 							</div>
 						</div>
 

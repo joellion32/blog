@@ -18,6 +18,7 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 //rutas para las diferentes paginas
 Route::get('/contacto', 'Web\BlogController@contacto')->name('contacto');
 Route::get('/sobre', 'Web\BlogController@sobre')->name('sobre');
+Route::get('/editorial', 'Web\BlogController@editorial')->name('editorial');
 
 // ruta para los posts
 Route::get('/', 'Blog\PostController@index')->name('home');
@@ -63,4 +64,7 @@ Route::get('editar/carrousel', 'admin\AdminController@editarcarrousel')->name('p
 Route::get('/carrousel/{id}', 'Blog\CarrouselController@carrousel');
 Route::get('/carrousel', 'Blog\CarrouselController@obtenercarrousel');
 Route::post('save/carrousel', 'Blog\CarrouselController@savecarrousel');
+
+
+
 
