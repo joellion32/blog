@@ -65,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	
 	<header>	
-		<nav class="navbar navbar-expand-lg p-2">
+		<nav style="background-color: #f0f3f1 !important;" class="navbar navbar-expand-lg p-2">
 		<div class="col-md-4 log-icons text-right m-8">
 		<span><b>Fecha: <?php 
 		date_default_timezone_set('America/La_Paz');
@@ -95,13 +95,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</nav>
 	
-			<div style="background-color:#7FFFD4 !important;" class="top-bar_sub_w3layouts container-fluid">
+			<div style="background-color:white !important;" class="top-bar_sub_w3layouts container-fluid">
 				<div class="row">
 					<div class="col-md-4 logo text-center">
 					</div>
 					<div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0 text-light">
-						<img width="40px" height="40px" style="margin-top:-12px;" src="{{asset('images/correo.png')}}" alt=""> <a class="navbar-brand" href="/">La Buena Nueva</a>
-					</div>
+						<img src="https://scontent.fhex4-1.fna.fbcdn.net/v/t1.15752-9/90560839_2555278891426963_6119785431329406976_n.jpg?_nc_cat=104&_nc_sid=b96e70&_nc_ohc=u8QidGaf3nYAX8W-a4_&_nc_ht=scontent.fhex4-1.fna&oh=e4415ae4ace0f4b96f2af8019634d912&oe=5EA6926A" style="width:100%;">					</div>
 				</div>
 			</div>
 			<!--para el menu-->
@@ -163,8 +162,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      <!-- footer -->
         <div class="footer-cpy text-center">
             <div class="logo">
-                <a class="navbar-brand" href="index.html">
-					<img width="40px" height="40px" style="margin-top:-12px;" src="{{asset('images/correo.png')}}" alt=""> <a class="navbar-brand" href="/">La Buena Nueva</a>
+				<a class="navbar-brand" href="/">La Buena Nueva</a>
             </div>
 
             <div class="footer-social">

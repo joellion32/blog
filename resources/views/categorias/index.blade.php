@@ -75,12 +75,9 @@
 						</div>
 						<div class="tech-btm">
 							<h4>Suscribete a nuestra pagina</h4>
-							<p>Suscribete para que recibas todos los posts por correo </p>
-							<form action="#" method="post">
+							<p>Suscribete para que te enteres de nuestras publicaciones </p>
 								<input type="email" placeholder="Email" required="">
 								<button onclick="Swal.fire('Mensaje enviado correctamente')" class="btn btn-success btn-block">Suscribete</button>
-							</form>
-
 						</div>
 						<div class="tech-btm">
 							<h4>Secciones</h4>

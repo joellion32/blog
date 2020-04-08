@@ -33,6 +33,7 @@
                     <h4>Publicaciones Recientes</h4>
                     
                     <div class="blog-grids row mb-3">
+                        @if (count($recientes))
                         @foreach ($recientes as $reciente)
                         <div class="col-md-5 blog-grid-left">
                             <a href="/post/detalle/{{$reciente->slug}}">
@@ -55,6 +56,14 @@
                         </div>
                         
                         @endforeach
+                        @else
+                        <div class="col-md-6 blog-grid-right">
+
+                            <h5>
+                                No hay publicaciones recientes
+                            </h5>
+                        </div>
+                        @endif
                     </div>
                 
                 </div>

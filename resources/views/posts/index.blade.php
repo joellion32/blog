@@ -9,12 +9,7 @@
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 			</ol>
 			<div id="slide" class="carousel-inner" role="listbox">
-				<div class="carousel-item active">
-					<div class="carousel-caption">
-						<h3>Enterate de las noticias cristianas
-						</h3>
-					</div>
-				</div>
+				
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -100,12 +95,9 @@
 						</div>
 						<div class="tech-btm">
 							<h4>Suscribete a nuestra pagina</h4>
-							<p>Suscribete para que recibas todos los posts por correo </p>
-							<form action="#" method="post">
+							<p>Suscribete para que te enteres de nuestras publicaciones </p>
 								<input type="email" placeholder="Email" required="">
 								<button onclick="Swal.fire('Mensaje enviado correctamente')" class="btn btn-success btn-block">Suscribete</button>
-							</form>
-
 						</div>
 						<div class="tech-btm">
 							<h4>Secciones</h4>
